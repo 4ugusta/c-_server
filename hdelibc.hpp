@@ -10,4 +10,6 @@
 
 #include <stdio.h>
 
+#include "Networking/hdelibc-networking.hpp"
+
 #endif /* hdelibc_hpp */

@@ -18,14 +18,22 @@
 
 namespace HDE
 {
-
 class BindingSocket: public SimpleSocket
 {
+private:
+    /* MEMBER VARIABLES */
+    int binding;
+    
+    /* MEMBER FUNCTIONS */
+    // Virtual function from parent to establish binding
+    void connect_to_network(int sock, struct sockaddr_in address);
 public:
-    // Constructor
+    /* CONSTRUCTORS */
+    // Parameterized constructor is required for this class
     BindingSocket(int domain, int service, int protocol, int port, u_long interface);
-    // Virtual function from parent
-    int connect_to_network(int sock, struct sockaddr_in address);
+    
+    /* GETTERS */
+    int get_binding();
 };
 
 }
