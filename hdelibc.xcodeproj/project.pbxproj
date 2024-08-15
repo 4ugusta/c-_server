@@ -14,6 +14,9 @@
 		7E6C6E7F2C6D451800D6C0C5 /* ListeningSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C6E7D2C6D451800D6C0C5 /* ListeningSocket.cpp */; };
 		7E6C6E832C6D4A1100D6C0C5 /* hdelibc-sockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C6E812C6D4A1100D6C0C5 /* hdelibc-sockets.cpp */; };
 		7E6C6E862C6D4AA500D6C0C5 /* hdelibc-networking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C6E842C6D4AA500D6C0C5 /* hdelibc-networking.cpp */; };
+		7E6C6E8A2C6DB41300D6C0C5 /* SimpleServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C6E882C6DB41300D6C0C5 /* SimpleServer.cpp */; };
+		7E6C6E8D2C6DC83700D6C0C5 /* TestServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C6E8B2C6DC83700D6C0C5 /* TestServer.cpp */; };
+		7E6C6E912C6E691400D6C0C5 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C6E902C6E691400D6C0C5 /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		7E6C6E822C6D4A1100D6C0C5 /* hdelibc-sockets.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "hdelibc-sockets.hpp"; sourceTree = "<group>"; };
 		7E6C6E842C6D4AA500D6C0C5 /* hdelibc-networking.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "hdelibc-networking.cpp"; sourceTree = "<group>"; };
 		7E6C6E852C6D4AA500D6C0C5 /* hdelibc-networking.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "hdelibc-networking.hpp"; sourceTree = "<group>"; };
+		7E6C6E882C6DB41300D6C0C5 /* SimpleServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleServer.cpp; sourceTree = "<group>"; };
+		7E6C6E892C6DB41300D6C0C5 /* SimpleServer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SimpleServer.hpp; sourceTree = "<group>"; };
+		7E6C6E8B2C6DC83700D6C0C5 /* TestServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestServer.cpp; sourceTree = "<group>"; };
+		7E6C6E8C2C6DC83700D6C0C5 /* TestServer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestServer.hpp; sourceTree = "<group>"; };
+		7E6C6E902C6E691400D6C0C5 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,7 @@
 			children = (
 				7E6C6E842C6D4AA500D6C0C5 /* hdelibc-networking.cpp */,
 				7E6C6E852C6D4AA500D6C0C5 /* hdelibc-networking.hpp */,
+				7E6C6E872C6DB3EF00D6C0C5 /* Servers */,
 				7E6C6E802C6D48E500D6C0C5 /* Sockets */,
 			);
 			path = Networking;
@@ -88,6 +97,18 @@
 				7E6C6E7E2C6D451800D6C0C5 /* ListeningSocket.hpp */,
 			);
 			path = Sockets;
+			sourceTree = "<group>";
+		};
+		7E6C6E872C6DB3EF00D6C0C5 /* Servers */ = {
+			isa = PBXGroup;
+			children = (
+				7E6C6E882C6DB41300D6C0C5 /* SimpleServer.cpp */,
+				7E6C6E892C6DB41300D6C0C5 /* SimpleServer.hpp */,
+				7E6C6E8B2C6DC83700D6C0C5 /* TestServer.cpp */,
+				7E6C6E8C2C6DC83700D6C0C5 /* TestServer.hpp */,
+				7E6C6E902C6E691400D6C0C5 /* test.cpp */,
+			);
+			path = Servers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +181,10 @@
 			files = (
 				7E6C6E732C6C07D600D6C0C5 /* SimpleSocket.cpp in Sources */,
 				7E6C6E762C6C88A300D6C0C5 /* BindingSocket.cpp in Sources */,
+				7E6C6E8A2C6DB41300D6C0C5 /* SimpleServer.cpp in Sources */,
+				7E6C6E912C6E691400D6C0C5 /* test.cpp in Sources */,
 				7E6C6E792C6D3B2200D6C0C5 /* ConnectingSocket.cpp in Sources */,
+				7E6C6E8D2C6DC83700D6C0C5 /* TestServer.cpp in Sources */,
 				7E6C6E7F2C6D451800D6C0C5 /* ListeningSocket.cpp in Sources */,
 				7E6C6E862C6D4AA500D6C0C5 /* hdelibc-networking.cpp in Sources */,
 				7E6C6E832C6D4A1100D6C0C5 /* hdelibc-sockets.cpp in Sources */,
